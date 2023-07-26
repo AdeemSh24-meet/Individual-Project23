@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SHEOUT</title>
+    <style>
+    input[type=text], select {
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 30%;
+  background-color: pink;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+</head>
+
+<body style="background-color:#f2f2f2;">
+
+    <center>
+    <form method="post" action="/signin">
+       
+        <h4>
+
+        Log in to your account
+        </h4>
+
+        
+        <p >
+        Please fill up your information below to sign in.
+        </p>
+
+       
+        <div>
+            <label>Email address*</label>
+            <div class="btn btn-primary btn-xl text-uppercase"> 
+                <input type="email"  name="email" id="emailStr" required>
+            </div>
+        </div>
+
+        
+        <div>
+            <label>Password*</label>
+            <div class="input-group">
+                <input type="password"  name="password" minlength="6">
+            </div>
+        </div>
+        
+       
+        <div>
+            <input type="submit"/>
+        </div>
+    </form>
+    <br>
+    if you want to creat acount
+    <a href="/signup"><button>signup</button></a>
+    <br>
+    <a href="/"><button>home</button></a>
+</center>
+</body>
+</html>
